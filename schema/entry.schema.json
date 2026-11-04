@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "org",
+      "url",
+      "source_url",
+      "summary",
+      "region",
+      "tags",
+      "status",
+      "added",
+      "last_verified"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "org": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "source_url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "summary": {
+        "type": "string",
+        "maxLength": 200
+      },
+      "region": {
+        "enum": [
+          "India",
+          "Global",
+          "Remote"
+        ]
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "status": {
+        "enum": [
+          "open",
+          "rolling",
+          "between cycles",
+          "closed",
+          "unknown"
+        ]
+      },
+      "deadline": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date"
+      },
+      "amount": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "added": {
+        "type": "string",
+        "format": "date"
+      },
+      "last_verified": {
+        "type": "string",
+        "format": "date"
+      },
+      "format": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "pattern": "^(Remote|Hybrid|In-person \\(.+\\))$"
+      },
+      "cost": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "topics": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "category": {
+        "enum": [
+          "Open",
+          "Entrepreneurship",
+          "Research",
+          "Policy/Civic",
+          "Creative/Humanities"
+        ]
+      }
+    },
+    "additionalProperties": false
+  }
+}

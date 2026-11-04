@@ -1,0 +1,178 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SECTIONS, STATUSES, load, SUGGEST_URL, STALE_DAYS, SOON_DAYS, type Section } from '../../lib/data';
+
+export function getStaticPaths() {
+  return Object.keys(SECTIONS).map((section) => ({ params: { section } }));
+}
+const section = Astro.params.section as Section;
+const meta = SECTIONS[section];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const entries = load(section).sort((a, b) => a.name.localeCompare(b.name));
+
+const uniq = (xs: (string | null | undefined)[]) => [...new Set(xs.filter(Boolean) as string[])].sort();
+const groups = [
+  { key: 'category', label: 'All categories', values: 'categories' in meta ? (meta.categories as readonly string[]).filter((c) => entries.some((e) => e.category === c)) : [] },
+  { key: 'tag', label: 'All', values: meta.tags.length ? meta.tags.filter((t) => entries.some((e) => e.tags.includes(t))) : [] },
+  { key: 'region', label: 'Anywhere', values: uniq(entries.map((e) => e.region)) },
+  { key: 'status', label: 'Any status', values: STATUSES.filter((s) => entries.some((e) => e.status === s)) },
+  ...(section === 'communities' ? [{ key: 'format', label: 'Any format', values: ['Remote', 'Hybrid', 'In-person'] }] : []),
+].filter((g) => g.values.length > 1);
+
+const cap = (s: string) => s[0].toUpperCase() + s.slice(1);
+const metaLine = (e: any) => [
+  e.category, e.org !== e.name && e.org, e.format ?? e.region, e.cost,
+  e.status !== 'unknown' && cap(e.status),
+].filter(Boolean).join(' · ');
+---
+<Base title={`${meta.title} — Radar`} description={meta.blurb}>
+  <link slot="head" rel="alternate" type="application/rss+xml" title={`Radar: ${meta.title}`} href={`${base}/${section}/rss.xml`} />
+  <a class="back" href={`${base}/`}>‹ Radar</a>
+  <h1>{meta.title}</h1>
+  <p class="lede">{meta.blurb}</p>
+  {'note' in meta && <p class="note">{meta.note.text} <a href={meta.note.link} target="_blank" rel="noopener">{meta.note.label}</a></p>}
+
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search" autocomplete="off" aria-label="Search" />
+    {groups.map((g) => (
+      <div class="group" data-group={g.key} role="radiogroup">
+        <button class="on" data-v="">{g.label}</button>
+        {g.values.map((v) => <button data-v={v}>{g.key === 'status' ? cap(v) : v}</button>)}
+      </div>
+    ))}
+    <div class="group sort" data-group="sort">
+      <button class="on" data-v="name">A–Z</button>
+      <button data-v="deadline">Deadline</button>
+      <button data-v="added">Newest</button>
+    </div>
+  </div>
+
+  <ol id="list">
+    {entries.map((e) => (
+      <li
+        id={e.id}
+        data-category={e.category ?? ''} data-tag={e.tags.join('|')} data-region={e.region} data-status={e.status}
+        data-format={(e.format ?? '').replace(/ \(.*/, '')}
+        data-deadline={e.deadline ?? ''} data-added={e.added} data-verified={e.last_verified}
+        data-text={[e.name, e.org, e.summary, e.amount, ...(e.tags), ...(e.topics ?? []), e.format, e.cost].join(' ').toLowerCase()}
+      >
+        <div class="row">
+          <a class="name" href={e.url} target="_blank" rel="noopener">{e.name}</a>
+          {e.amount && <span class="amt">{e.amount}</span>}
+        </div>
+        <p class="sum">{e.summary}</p>
+        {e.topics?.length ? <p class="roles">{e.topics.join(' · ')}</p> : null}
+        <p class="meta">
+          <span>{metaLine(e)}</span>
+          <span class="badge soon" hidden></span>
+          <span class="badge stale" hidden>Unverified</span>
+          <span class="links">
+            {e.source_url !== e.url && <a href={e.source_url} target="_blank" rel="noopener">Source</a>}
+            <a href={`#${e.id}`} aria-label="Link to entry">#</a>
+          </span>
+        </p>
+      </li>
+    ))}
+  </ol>
+  <p id="empty" class="mute" hidden>Nothing matches.</p>
+
+  <footer>
+    <a href={SUGGEST_URL}>Suggest an opportunity</a>
+    <a href={`${base}/${section}/rss.xml`}>RSS</a>
+  </footer>
+</Base>
+
+<script define:vars={{ STALE_DAYS, SOON_DAYS }}>
+  const DAY = 864e5, now = Date.now();
+  const items = [...document.querySelectorAll('#list li')];
+  const list = document.getElementById('list');
+  const state = { q: '', category: '', tag: '', region: '', status: '', format: '', sort: 'name' };
+
+  // Badges are computed in the browser so they stay right without a rebuild.
+  for (const li of items) {
+    const d = li.dataset.deadline;
+    if (d) {
+      const left = Math.ceil((Date.parse(d) - now) / DAY);
+      if (left < 0 && li.dataset.status !== 'rolling') li.dataset.status = 'closed';
+      else if (left <= SOON_DAYS) {
+        const b = li.querySelector('.soon');
+        b.textContent = left === 0 ? 'Closes today' : `Closes in ${left}d`;
+        b.hidden = false;
+      }
+    }
+    if ((now - Date.parse(li.dataset.verified)) / DAY > STALE_DAYS) li.querySelector('.stale').hidden = false;
+  }
+
+  function render() {
+    const words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    let shown = 0;
+    for (const li of items) {
+      const ok =
+        words.every((w) => li.dataset.text.includes(w)) &&
+        (!state.category || li.dataset.category === state.category) &&
+        (!state.tag || li.dataset.tag.split('|').includes(state.tag)) &&
+        (!state.region || li.dataset.region === state.region) &&
+        (!state.status || li.dataset.status === state.status) &&
+        (!state.format || li.dataset.format === state.format);
+      li.hidden = !ok;
+      if (ok) shown++;
+    }
+    const key = (li) =>
+      state.sort === 'deadline' ? li.dataset.deadline || '9999' :
+      state.sort === 'added' ? '-' + (99999999 - Number(li.dataset.added.replace(/-/g, ''))) :
+      li.querySelector('.name').textContent.toLowerCase();
+    items.sort((a, b) => key(a).localeCompare(key(b))).forEach((li) => list.appendChild(li));
+    document.getElementById('empty').hidden = shown > 0;
+  }
+
+  document.getElementById('q').addEventListener('input', (e) => { state.q = e.target.value; render(); });
+  for (const g of document.querySelectorAll('.group')) {
+    g.addEventListener('click', (e) => {
+      const b = e.target.closest('button');
+      if (!b) return;
+      g.querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b));
+      state[g.dataset.group] = b.dataset.v || (g.dataset.group === 'sort' ? 'name' : '');
+      render();
+    });
+  }
+  if (location.hash) document.querySelector(location.hash)?.classList.add('target');
+</script>
+
+<style>
+  .controls { margin: 48px 0 8px; }
+  #q {
+    width: 100%; font: inherit; font-size: 19px; color: var(--fg); background: var(--soft);
+    border: 0; border-radius: 12px; padding: 14px 18px; outline: none; -webkit-appearance: none;
+  }
+  #q::placeholder { color: var(--mute); }
+  .group {
+    display: flex; gap: 4px; margin-top: 12px; overflow-x: auto; scrollbar-width: none;
+    mask-image: linear-gradient(90deg, #000 92%, transparent);
+  }
+  .group::-webkit-scrollbar { display: none; }
+  .group button {
+    flex: none; font: inherit; font-size: 14px; color: var(--mute); background: none; border: 0;
+    padding: 5px 12px; border-radius: 999px; cursor: pointer; transition: color .15s, background .15s;
+  }
+  .group button:hover { color: var(--fg); }
+  .group button.on { color: var(--bg); background: var(--fg); }
+  .sort { margin-top: 16px; }
+  ol { list-style: none; border-top: 1px solid var(--line); }
+  li { padding: 24px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 24px; }
+  li.target { animation: flash 2s ease-out; }
+  @keyframes flash { from { background: var(--soft); } to { background: transparent; } }
+  .row { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+  .name { font-size: 19px; font-weight: 600; letter-spacing: -0.02em; }
+  .name:hover { opacity: .55; }
+  .amt { flex: none; font-variant-numeric: tabular-nums; }
+  .sum { margin-top: 4px; }
+  .roles { margin-top: 4px; font-size: 14px; color: var(--mute); }
+  .note { margin-top: 24px; padding: 16px 18px; background: var(--soft); border-radius: 12px; font-size: 15px; }
+  .note a { font-weight: 600; white-space: nowrap; }
+  .note a:hover { opacity: .55; }
+  .meta { margin-top: 8px; font-size: 13px; color: var(--mute); display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; }
+  .links { margin-left: auto; display: flex; gap: 12px; }
+  .links a:hover { color: var(--fg); }
+  .badge { font-weight: 600; color: var(--fg); }
+  .badge.stale { color: var(--mute); font-weight: 400; font-style: italic; }
+</style>

@@ -1,0 +1,453 @@
+# India
+- id: lossfunk-residency
+  name: Lossfunk Residency
+  org: Lossfunk
+  url: https://lossfunk.com/residency
+  source_url: https://lossfunk.com/residency
+  summary: 6-week cohort of 10–15 builders. Restarting. Hybrid option available.
+  region: India
+  tags: [Residency]
+  topics: [AI, Deep science]
+  format: In-person (Bengaluru)
+  cost: Free, no equity
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: lossfunk-fellowship
+  name: Lossfunk Fellowship
+  org: Lossfunk
+  url: https://lossfunk.com
+  source_url: https://lossfunk.com
+  summary: 6-month research fellowship; exceptional undergrads welcome.
+  region: India
+  tags: [Fellowship]
+  topics: [AI, Deep science]
+  format: In-person (Bengaluru)
+  cost: Paid stipend
+  status: open
+  deadline: null
+  amount: ₹1.25L/month
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: lossfunk-sabbatical
+  name: Lossfunk Sabbatical
+  org: Lossfunk
+  url: https://lossfunk.com
+  source_url: https://lossfunk.com
+  summary: 3–6 months for experienced people with a risky project.
+  region: India
+  tags: [Fellowship]
+  topics: [AI, Science]
+  format: In-person (Bengaluru)
+  cost: Funded
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: junction
+  name: Junction
+  org: Lagrange Point × HackerFab
+  url: https://junction.lagrangepoint.org
+  source_url: https://junction.lagrangepoint.org
+  summary: Build semiconductor equipment, process flows and open chips. Starts early December 2026.
+  region: India
+  tags: [Residency]
+  topics: [Hardware, Semiconductors]
+  format: In-person (Bengaluru)
+  cost: null
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: localhost-labs
+  name: LocalHost Bangalore Labs
+  org: LocalHost
+  url: https://localhosthq.in
+  source_url: https://localhosthq.in
+  summary: 75-day program for ages 18–30 building inventions. Flights, housing and lab covered.
+  region: India
+  tags: [Residency]
+  topics: [Open/Any, Hardware, Bio, Creative]
+  format: In-person (Bengaluru)
+  cost: Free
+  status: unknown
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: residency-blr
+  name: The Residency Bangalore
+  org: The Residency
+  url: https://www.residencyblr.com
+  source_url: https://www.residencyblr.com
+  summary: 30-day builders track with housing and co-working. November 2026 cohort.
+  region: India
+  tags: [Hacker house]
+  topics: [Open/Any]
+  format: In-person (Bengaluru)
+  cost: null
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: invention-novelty
+  name: Invention NoveltyHQ
+  org: Invention NoveltyHQ
+  url: https://www.inventionnovelty.com
+  source_url: https://www.inventionnovelty.com
+  summary: Paid 30-day founder residency, 12–16 builders.
+  region: India
+  tags: [Hacker house]
+  topics: [Open/Any]
+  format: In-person (Bengaluru)
+  cost: Costs money
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: secure-ai-futures
+  name: Secure AI Futures Lab hubs
+  org: Secure AI Futures Lab
+  url: https://secureaifutureslab.com
+  source_url: https://secureaifutureslab.com
+  summary: Reading groups, hackathons and fellowships in Bengaluru and Delhi; recruiting hub leads.
+  region: India
+  tags: [Community, Volunteer org]
+  topics: [AI safety]
+  format: In-person (Bengaluru, Delhi)
+  cost: Subsidised co-working
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: ea-india
+  name: EA India / EA Bangalore
+  org: Effective Altruism India
+  url: https://effectivealtruismindia.in
+  source_url: https://effectivealtruismindia.in
+  summary: Local EA groups and events.
+  region: India
+  tags: [Community]
+  topics: [Public good, AI]
+  format: Hybrid
+  cost: Free
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: ea-summit-bengaluru
+  name: 'EA Summit: Bengaluru'
+  org: Effective Altruism
+  url: https://www.effectivealtruism.org/ea-global
+  source_url: https://www.effectivealtruism.org/ea-global
+  summary: Main EA/AI-safety networking event in India this year. Event on 13 Dec 2026.
+  region: India
+  tags: [Conference]
+  topics: [Public good, AI]
+  format: In-person (Bengaluru)
+  cost: Application-based
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: foss-united
+  name: FOSS United chapters & FOSS Hack
+  org: FOSS United Foundation
+  url: https://fossunited.org
+  source_url: https://fossunited.org
+  summary: India's main FOSS community. City chapters plus online events.
+  region: India
+  tags: [Community]
+  topics: [Open source]
+  format: Hybrid
+  cost: Free
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+
+# Global / remote
+- id: carboncopies
+  name: Carboncopies Foundation
+  org: Carboncopies Foundation
+  url: https://carboncopies.org/Join
+  source_url: https://carboncopies.org/Join
+  summary: 'Research Assistant (unpaid): ~5 hrs/week + weekly meeting, 4+ months. Brain emulation.'
+  region: Remote
+  tags: [Volunteer org]
+  topics: [Neurotech, Brain emulation]
+  format: Remote
+  cost: Free
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: foresight-nodes
+  name: Foresight Institute nodes
+  org: Foresight Institute
+  url: https://foresight.org
+  source_url: https://foresight.org
+  summary: Grants plus office and compute in SF and Berlin; grants work remotely too. Whole-brain emulation focus area.
+  region: Global
+  tags: [Fellowship]
+  topics: [Neurotech, AI, Bio]
+  format: In-person (SF, Berlin)
+  cost: Funded
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: astera-residency
+  name: Astera Residency
+  org: Astera
+  url: https://astera.org/residency
+  source_url: https://astera.org/residency
+  summary: 12–18 month residency with visa support. A stretch goal.
+  region: Global
+  tags: [Residency]
+  topics: [Neuro & AI, Open science]
+  format: In-person (Emeryville, CA)
+  cost: Funded
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: tarbell-2027
+  name: Tarbell Fellowship 2027
+  org: Tarbell
+  url: https://aisafety.com/training
+  source_url: https://aisafety.com/training
+  summary: For AI journalism and writing.
+  region: Global
+  tags: [Fellowship]
+  topics: [AI journalism]
+  format: null
+  cost: null
+  status: open
+  deadline: '2026-11-22'
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: govai-dc-2027
+  name: GovAI DC Summer Fellowship 2027
+  org: GovAI
+  url: https://aisafety.com/training
+  source_url: https://aisafety.com/training
+  summary: AI governance fellowship.
+  region: Global
+  tags: [Fellowship]
+  topics: [Civic/Policy, AI]
+  format: In-person (Washington, DC)
+  cost: null
+  status: open
+  deadline: '2026-11-22'
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: iliad-intensive
+  name: Iliad Intensive
+  org: Iliad
+  url: https://aisafety.com/training
+  source_url: https://aisafety.com/training
+  summary: Alignment theory intensive. November 2026.
+  region: Global
+  tags: [Cohort]
+  topics: [AI safety, Formal theory]
+  format: null
+  cost: null
+  status: unknown
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: secure-program-synthesis
+  name: Secure Program Synthesis Fellowship
+  org: Secure Program Synthesis
+  url: https://aisafety.com/training
+  source_url: https://aisafety.com/training
+  summary: Closest match to formal methods. Watch for 2027.
+  region: Remote
+  tags: [Fellowship]
+  topics: [Formal systems, AI]
+  format: Remote
+  cost: null
+  status: closed
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: openai-safety-fellowship
+  name: OpenAI Safety Fellowship
+  org: OpenAI
+  url: https://openai.com
+  source_url: https://openai.com
+  summary: Pilot running Sep 2026–Feb 2027. Watch for the next round.
+  region: Global
+  tags: [Fellowship]
+  topics: [AI safety]
+  format: null
+  cost: Paid stipend
+  status: closed
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: aisafety-training
+  name: AISafety.com training directory
+  org: AISafety.com
+  url: https://aisafety.com/training
+  source_url: https://aisafety.com/training
+  summary: Best live feed of AI-safety fellowships and deadlines.
+  region: Remote
+  tags: [Directory]
+  topics: [AI safety]
+  format: Remote
+  cost: Free
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: manifund-community
+  name: Manifund community
+  org: Manifund
+  url: https://manifund.org
+  source_url: https://manifund.org
+  summary: Public project pages and regrantor discussion.
+  region: Remote
+  tags: [Community]
+  topics: [AI, Public good]
+  format: Remote
+  cost: Free
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: logos-ift
+  name: Logos / Institute of Free Technology
+  org: Logos
+  url: https://logos.co
+  source_url: https://logos.co
+  summary: Builder programs, prize tracks and grants. Online plus events.
+  region: Remote
+  tags: [Community]
+  topics: [Civic, Privacy, Open source]
+  format: Remote
+  cost: Free
+  status: open
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+
+# Added 2026-11-03 from category research
+- id: lamp-fellowship
+  name: LAMP Fellowship
+  org: PRS Legislative Research
+  url: https://prsindia.org/lamp
+  source_url: https://prsindia.org/lamp
+  summary: 11 months working with an MP. Ages 25 and under. Last deadline 21 Dec 2025; next call expected ~Nov 2026.
+  region: India
+  tags: [Fellowship]
+  topics: [Civic/Policy]
+  format: In-person (New Delhi)
+  cost: Paid, ₹23k/month
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: teach-for-india
+  name: Teach For India Fellowship
+  org: Teach For India
+  url: https://www.teachforindia.org
+  source_url: https://www.teachforindia.org
+  summary: Two years teaching in a low-income school. Stipend plus city allowance. 2027 cohort rounds may still be open.
+  region: India
+  tags: [Fellowship]
+  topics: [Civic/Policy, Education]
+  format: In-person (multiple cities)
+  cost: Paid stipend
+  status: unknown
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: gandhi-fellowship
+  name: Gandhi Fellowship
+  org: Piramal Foundation
+  url: https://www.gandhifellowship.org
+  source_url: https://www.gandhifellowship.org
+  summary: Two years in district education and health systems. Recruits largely through campus drives.
+  region: India
+  tags: [Fellowship]
+  topics: [Civic/Policy, Education]
+  format: In-person (multiple districts)
+  cost: Paid stipend
+  status: unknown
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: takshashila-nas-fellowship
+  name: Takshashila NAS Fellowship
+  org: Takshashila Institution
+  url: https://takshashila.org.in/pages/fellowships/nasx/
+  source_url: https://takshashila.org.in/pages/fellowships/nasx/
+  summary: Policy research fellowship with tech, China and Pakistan tracks. 2026 round closed 7 Sep.
+  region: India
+  tags: [Fellowship]
+  topics: [Civic/Policy, Geopolitics]
+  format: Remote
+  cost: Unknown
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: obama-leaders-asia-pacific
+  name: 'Obama Foundation Leaders: Asia-Pacific'
+  org: Obama Foundation
+  url: https://www.obama.org/programs/leaders/asia-pacific
+  source_url: https://www.obama.org/programs/leaders/asia-pacific
+  summary: Six-month leadership programme for ages 24–45 working on public good. Applications open 9 Nov 2026.
+  region: India
+  tags: [Fellowship]
+  topics: [Civic/Policy]
+  format: Hybrid
+  cost: Free, costs covered
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: khoj-residencies
+  name: Khoj Residencies
+  org: Khoj International Artists' Association
+  url: https://khojstudios.org
+  source_url: https://khojstudios.org
+  summary: Artist and researcher residencies in Delhi. Annual calls; 2026 closed.
+  region: India
+  tags: [Residency]
+  topics: [Arts]
+  format: In-person (New Delhi)
+  cost: Unknown
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'

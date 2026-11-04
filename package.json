@@ -1,0 +1,25 @@
+{
+  "name": "radar",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run validate && astro build",
+    "preview": "astro preview",
+    "validate": "tsx scripts/validate.ts",
+    "add": "tsx scripts/add.ts",
+    "check-links": "tsx scripts/check-links.ts"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.11",
+    "astro": "^5.1.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "tsx": "^4.19.2",
+    "@types/js-yaml": "^4.0.9"
+  }
+}

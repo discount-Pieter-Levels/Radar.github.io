@@ -1,0 +1,512 @@
+# Global no-strings microgrants live on the 1517 list (linked at the top of the page).
+# Don't duplicate them here.
+
+# India-native / India-dedicated
+- id: emergent-ventures-india
+  name: Emergent Ventures India
+  org: Mercatus (Shruti Rajagopalan, Tyler Cowen)
+  url: https://www.mercatus.org/emergent-ventures
+  source_url: https://www.mercatus.org/emergent-ventures
+  summary: India tranche of EV. Ages 13+. 20 cohorts by Oct 2026. No AI-written applications.
+  region: India
+  category: Open
+  tags: [Open/Any, AI, Deep science, Civic/Policy]
+  status: rolling
+  deadline: null
+  amount: Not published
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: atomic-grant
+  name: Atomic Grant
+  org: gradCapital
+  url: https://www.gradcapital.in/atomicfellow
+  source_url: https://www.gradcapital.in/atomicfellow
+  summary: No-strings money for student science and engineering projects.
+  region: India
+  category: Research
+  tags: [Deep science, Hardware/Robotics, AI]
+  status: unknown
+  deadline: null
+  amount: $1k–$5k
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: feather-grant
+  name: Feather Grant
+  org: gradCapital
+  url: https://www.gradcapital.in/feathergrants
+  source_url: https://www.gradcapital.in/feathergrants
+  summary: Money to experiment with any idea; no startup expected.
+  region: India
+  category: Open
+  tags: [Open/Any, Creative/Arts/Writing]
+  status: unknown
+  deadline: null
+  amount: $1k
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: nagarathna-grant
+  name: Nagarathna Memorial Grant
+  org: Thejesh GN
+  url: https://thejeshgn.com
+  source_url: https://thejeshgn.com
+  summary: Yearly no-strings microgrant open to everyone. Open/CC work preferred. Next round expected ~15 Jan 2027.
+  region: India
+  category: Open
+  tags: [Open/Any, Public good/Open source, Creative/Arts/Writing]
+  status: between cycles
+  deadline: null
+  amount: ₹15k–₹50k each
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: bellare-grants
+  name: Bellare Grants
+  org: Bellare family
+  url: https://bellaregrants.netlify.app
+  source_url: https://bellaregrants.netlify.app
+  summary: Personal microgrants for education, health, research and open source. Only ₹1,000 left for 2026; watch for the 2027 pool.
+  region: India
+  category: Open
+  tags: [Public good/Open source, Hardware/Robotics, Open/Any]
+  status: open
+  deadline: null
+  amount: Up to ₹1L
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: foss-united-project
+  name: FOSS United Project Grants
+  org: FOSS United Foundation
+  url: https://fossunited.org/grants
+  source_url: https://fossunited.org/grants
+  summary: Funds Indian FOSS projects, maintainers and design fellowships.
+  region: India
+  category: Research
+  tags: [Public good/Open source]
+  status: rolling
+  deadline: null
+  amount: ₹75k and up
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: foss-united-community
+  name: FOSS United Event/Community Grants
+  org: FOSS United Foundation
+  url: https://fossunited.org/grants
+  source_url: https://fossunited.org/grants
+  summary: Small grants for meetups, college clubs and Linux events.
+  region: India
+  category: Research
+  tags: [Public good/Open source]
+  status: rolling
+  deadline: null
+  amount: e.g. ₹15k–₹50k
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: kothari-fellowship
+  name: Kothari Fellowship
+  org: Kothari (private)
+  url: https://www.kotharifellowship.com
+  source_url: https://www.kotharifellowship.com
+  summary: Grant plus mentorship for Indians under 25. Not the DS Kothari postdoc.
+  region: India
+  category: Open
+  tags: [Open/Any]
+  status: unknown
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: localhost-grants
+  name: LocalHost India
+  org: LocalHost
+  url: https://localhosthq.in
+  source_url: https://localhosthq.in
+  summary: Microgrants inside a 75-day Bengaluru lab program. The site says it doesn't promise funding.
+  region: India
+  category: Open
+  tags: [Open/Any, Hardware/Robotics, Bio]
+  status: unknown
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: ai-grants-india
+  name: AI Grants India
+  org: AI Grants India (non-profit)
+  url: https://aigrants.in
+  source_url: https://aigrants.in
+  summary: Model API credits for Indian students and indie hackers.
+  region: India
+  category: Research
+  tags: [AI]
+  status: rolling
+  deadline: null
+  amount: API credits (not cash)
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: floss-fund
+  name: FLOSS/fund
+  org: Zerodha
+  url: https://floss.fund
+  source_url: https://floss.fund
+  summary: Global, Indian-run. Add funding.json to your repo to be indexed. Paid in tranches.
+  region: Global
+  category: Research
+  tags: [Public good/Open source]
+  status: rolling
+  deadline: null
+  amount: $1M/year pool
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+
+# Research funders (global, not on the 1517 list)
+- id: manifund
+  name: Manifund
+  org: Manifund
+  url: https://manifund.org
+  source_url: https://manifund.org
+  summary: Post a project for regrantor or crowd funding.
+  region: Global
+  category: Open
+  tags: [AI, Public good/Open source, Open/Any]
+  status: rolling
+  deadline: null
+  amount: Varies
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: acx-grants
+  name: ACX Grants
+  org: Scott Alexander
+  url: https://www.astralcodexten.com
+  source_url: https://www.astralcodexten.com
+  summary: Low-paperwork grants; Indian winners in past rounds. Next round late 2026 / early 2027.
+  region: Global
+  category: Open
+  tags: [Open/Any, Deep science]
+  status: between cycles
+  deadline: null
+  amount: Varies
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: foresight-nodes-grants
+  name: Foresight — AI for Science & Safety Nodes
+  org: Foresight Institute
+  url: https://foresight.org/grants
+  source_url: https://foresight.org/grants
+  summary: Includes a whole-brain emulation focus area. Closed 31 Oct 2026; watch for the next cycle.
+  region: Global
+  category: Research
+  tags: [Neurotech, AI, Bio, Deep science]
+  status: between cycles
+  deadline: null
+  amount: Typically $30k–$100k
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: lightcone-commons
+  name: Lightcone Commons
+  org: Lightcone
+  url: https://www.lightconecommons.com/
+  source_url: https://www.lightconecommons.com/
+  summary: Took over live LTFF applications for AI safety work. Round 2 before Christmas 2026.
+  region: Global
+  category: Research
+  tags: [AI]
+  status: open
+  deadline: null
+  amount: Varies
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: bluedot-transition
+  name: BlueDot Career Transition Grants
+  org: BlueDot Impact
+  url: https://bluedot.org
+  source_url: https://bluedot.org
+  summary: Funds moves into AI safety careers.
+  region: Global
+  category: Research
+  tags: [AI]
+  status: unknown
+  deadline: null
+  amount: null
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+- id: coefficient-giving
+  name: Coefficient Giving RFPs
+  org: Coefficient Giving (formerly Open Phil)
+  url: https://coefficientgiving.org/
+  source_url: https://coefficientgiving.org/
+  summary: Large-funder RFPs; better for established researchers.
+  region: Global
+  category: Research
+  tags: [AI, Bio]
+  status: unknown
+  deadline: null
+  amount: Varies
+  added: '2026-11-01'
+  last_verified: '2026-11-01'
+
+# Added 2026-11-03 from category research
+- id: rise-fellowship
+  name: Rise
+  org: Schmidt Futures & Rhodes Trust
+  url: https://www.risefortheworld.org
+  source_url: https://www.risefortheworld.org
+  summary: Ages 15–17. Summit, need-based university scholarship and project funding. 16 Indian winners in 2022.
+  region: Global
+  category: Open
+  tags: [Open/Any]
+  status: unknown
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: inlaks-social-engagement
+  name: Inlaks Fellowship for Social Engagement
+  org: Inlaks Shivdasani Foundation
+  url: https://www.inlaksfoundation.org
+  source_url: https://www.inlaksfoundation.org
+  summary: Two-year self-designed learning project with social impact. Last round closed 31 Dec 2025; next expected ~Dec 2026.
+  region: India
+  category: Open
+  tags: [Open/Any, Civic/Policy]
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: thiel-fellowship
+  name: Thiel Fellowship
+  org: Thiel Foundation
+  url: https://thielfellowship.org
+  source_url: https://thielfellowship.org
+  summary: Ages 22 and under, to build instead of attending college. No equity. Past Indian fellows include Ritesh Agarwal (OYO).
+  region: Global
+  category: Entrepreneurship
+  tags: [Open/Any]
+  status: rolling
+  deadline: null
+  amount: $250k over 2 years
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: echoing-green
+  name: Echoing Green Fellowship
+  org: Echoing Green
+  url: https://echoinggreen.org
+  source_url: https://echoinggreen.org
+  summary: Early-stage social entrepreneurs. Indian fellows include Raju Kendre (2024). 2026 cycle closed.
+  region: Global
+  category: Entrepreneurship
+  tags: [Civic/Policy]
+  status: between cycles
+  deadline: null
+  amount: $100k over 18 months
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: tata-social-enterprise-challenge
+  name: Tata Social Enterprise Challenge
+  org: Tata Group & IIM Calcutta
+  url: https://www.tatasechallenge.org
+  source_url: https://www.tatasechallenge.org
+  summary: Annual competition for Indian social enterprises. 2026 round closed Aug/Sep.
+  region: India
+  category: Entrepreneurship
+  tags: [Civic/Policy, Climate]
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: rainmatter-foundation
+  name: Rainmatter Foundation
+  org: Zerodha
+  url: https://rainmatter.org
+  source_url: https://rainmatter.org
+  summary: Grants and fellowships for climate, ecology and livelihoods work. No open call found.
+  region: India
+  category: Entrepreneurship
+  tags: [Climate]
+  status: unknown
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: entrepreneur-first-bangalore
+  name: Entrepreneurs First (Bangalore)
+  org: Entrepreneurs First
+  url: https://www.joinef.com
+  source_url: https://www.joinef.com
+  summary: Pre-team, pre-idea talent investor. Stipend during the programme, then investment for equity.
+  region: India
+  category: Entrepreneurship
+  tags: [Open/Any, equity-linked]
+  status: rolling
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: antler-india
+  name: Antler India
+  org: Antler
+  url: https://www.antler.co/location/india
+  source_url: https://www.antler.co/location/india
+  summary: Pre-seed residency and investor; Antler Direct accepts applications any time. Reported ~₹4 cr for ~11%.
+  region: India
+  category: Entrepreneurship
+  tags: [Open/Any, equity-linked]
+  status: rolling
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: south-park-commons
+  name: South Park Commons Founder Fellowship
+  org: South Park Commons
+  url: https://www.southparkcommons.com
+  source_url: https://www.southparkcommons.com
+  summary: Community and investment for founders at the -1 to 0 stage. Two cohorts a year; no India-specific track.
+  region: Global
+  category: Entrepreneurship
+  tags: [Open/Any, equity-linked]
+  status: rolling
+  deadline: null
+  amount: $1M investment
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: google-phd-fellowship-india
+  name: Google PhD Fellowship (India)
+  org: Google
+  url: https://research.google/programs-and-events/phd-fellowship/
+  source_url: https://research.google/programs-and-events/phd-fellowship/
+  summary: India track for PhD students in CS and related fields. 2026 round closed 30 Apr.
+  region: India
+  category: Research
+  tags: [AI]
+  status: between cycles
+  deadline: null
+  amount: Up to $50k
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: qualcomm-innovation-fellowship-india
+  name: Qualcomm Innovation Fellowship India
+  org: Qualcomm
+  url: https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-india
+  source_url: https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-india
+  summary: For PhD students at Indian institutes, paid via the faculty advisor. 2026 round closed 20 Apr.
+  region: India
+  category: Research
+  tags: [AI, Hardware/Robotics]
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: nvidia-graduate-fellowship
+  name: NVIDIA Graduate Fellowship
+  org: NVIDIA
+  url: https://research.nvidia.com/graduate-fellowships
+  source_url: https://research.nvidia.com/graduate-fellowships
+  summary: PhD students in computing research, worldwide. 2027 round closed 30 Oct 2026.
+  region: Global
+  category: Research
+  tags: [AI, Hardware/Robotics]
+  status: between cycles
+  deadline: null
+  amount: Up to $60k
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: isif-asia
+  name: ISIF Asia Grants
+  org: APNIC Foundation
+  url: https://isif.asia
+  source_url: https://isif.asia
+  summary: Internet-for-development grants across Asia-Pacific. Organisations only, not individuals. 2026 call closed in April.
+  region: Global
+  category: Policy/Civic
+  tags: [Civic/Policy, Public good/Open source]
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: nif-book-fellowship
+  name: NIF Book Fellowship
+  org: New India Foundation
+  url: https://www.newindiafoundation.org
+  source_url: https://www.newindiafoundation.org
+  summary: One year to write a nonfiction book on modern India. Indian citizens only. Deadline in Nov/Dec 2026; check the site.
+  region: India
+  category: Creative/Humanities
+  tags: [Creative/Arts/Writing]
+  status: open
+  deadline: null
+  amount: ₹18 lakh
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: ifa-grants
+  name: IFA Grants
+  org: India Foundation for the Arts
+  url: https://indiaifa.org
+  source_url: https://indiaifa.org
+  summary: Arts practice, research, education and archive grants. Calls run Apr–Sep each year.
+  region: India
+  category: Creative/Humanities
+  tags: [Creative/Arts/Writing]
+  status: between cycles
+  deadline: null
+  amount: ₹1–5 lakh
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: inlaks-fine-art-award
+  name: Inlaks Fine Art Award
+  org: Inlaks Shivdasani Foundation
+  url: https://inlaksfoundation.org/opportunities/
+  source_url: https://inlaksfoundation.org/opportunities/
+  summary: Award for young visual artists born on or after 1 Jan 1996. 2027 round listed; deadline not found.
+  region: India
+  category: Creative/Humanities
+  tags: [Creative/Arts/Writing]
+  status: unknown
+  deadline: null
+  amount: ₹3 lakh
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: charles-wallace-india-trust
+  name: Charles Wallace India Trust Fellowships
+  org: Charles Wallace India Trust
+  url: https://www.charleswallaceindiatrust.com
+  source_url: https://www.charleswallaceindiatrust.com
+  summary: UK fellowships and residencies for Indian artists, writers and scholars, run with host institutions.
+  region: India
+  category: Creative/Humanities
+  tags: [Creative/Arts/Writing]
+  status: unknown
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: serendipity-arts-grants
+  name: Serendipity Arts Grants
+  org: Serendipity Arts Foundation
+  url: https://www.serendipityartsfoundation.org
+  source_url: https://www.serendipityartsfoundation.org
+  summary: Grants and residencies across visual arts, music, performance and arts writing. Annual calls, 2026 closed.
+  region: India
+  category: Creative/Humanities
+  tags: [Creative/Arts/Writing]
+  status: between cycles
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'
+- id: pulitzer-center-grants
+  name: Pulitzer Center Reporting Grants
+  org: Pulitzer Center
+  url: https://pulitzercenter.org/grants
+  source_url: https://pulitzercenter.org/grants
+  summary: Reporting grants for journalists worldwide; several Indian grantees in 2026.
+  region: Global
+  category: Creative/Humanities
+  tags: [Creative/Arts/Writing, Civic/Policy]
+  status: rolling
+  deadline: null
+  amount: null
+  added: '2026-11-03'
+  last_verified: '2026-11-03'

@@ -1,0 +1,21 @@
+name: Weekly link check
+on:
+  schedule: [{ cron: '0 4 * * 1' }]
+  workflow_dispatch:
+permissions: { contents: write, issues: write }
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm run check-links
+      - name: Commit status changes (past-deadline → closed)
+        run: |
+          git config user.name "radar-bot"; git config user.email "radar-bot@users.noreply.github.com"
+          git add data && git commit -m "Link check: mark past-deadline entries closed" && git push || echo "No data changes"
+      - name: Open issue with report
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: gh issue create --title "Link check — $(date +%F)" --body-file link-report.md

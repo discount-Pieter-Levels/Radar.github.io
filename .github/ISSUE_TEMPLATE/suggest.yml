@@ -1,0 +1,21 @@
+name: Suggest an opportunity
+description: A grant, community or fellowship. A human reviews every suggestion.
+title: "Suggest: "
+labels: [suggestion]
+body:
+  - type: dropdown
+    id: section
+    attributes: { label: Section, options: [Grants, Communities & Fellowships] }
+    validations: { required: true }
+  - type: input
+    id: url
+    attributes: { label: Link, description: Official page or the X post. }
+    validations: { required: true }
+  - type: textarea
+    id: notes
+    attributes: { label: Anything else?, description: Amount, deadline, who it's for. }
+  - type: checkboxes
+    id: govt
+    attributes:
+      label: Rule
+      options: [{ label: This is not government-funded or government-run in any way., required: true }]
