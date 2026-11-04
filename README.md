@@ -6,19 +6,7 @@ Data lives in `data/grants.yaml` and `data/communities.yaml`.
 
 ## Add an entry
 
-```sh
-npm run add -- <url> [grants|communities]
-```
-
-Or edit the YAML and run `npm run validate`. Use `null` for unknown fields; never guess.
-
-## Run locally
-
-```sh
-npm install
-npm run dev     # http://localhost:4321
-npm run build   # validate + build to dist/
-```
+Edit `data/grants.yaml` or `data/communities.yaml` and open a pull request. Use `null` for unknown fields; never guess.
 
 ## Automation
 
